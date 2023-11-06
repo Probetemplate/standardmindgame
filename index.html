@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="angular-firebase-user-profiles">
+    <head profile="http://www.w3.org/2005/10/profile">
+
+    <!-- META DATA -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Angular Firebase User Profiles">
+    <meta name="author" content="Cliff Hall">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="assets/img/user-profile1.png" />
+
+    <!-- PAGE TITLE -->
+    <title>SMG | Home</title>
+
+    <!-- VENDOR CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <link href="assets/css/jumbotron-narrow.css" rel="stylesheet"/>
+    <link href="assets/css/bootstrap-social.css" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://firebasestorage.googleapis.com/v0/b/contact-database-9c47b.appspot.com/o/global.css?alt=media&token=6f2b0cc2-a2dd-45bc-8896-dc17c2382fb3&_gl=1*zmdogc*_ga*MjAyNDY5ODM1MC4xNjk4OTE3NTM0*_ga_CW55HF8NVT*MTY5OTI2MzA3My44LjEuMTY5OTI2NTAzMS4zMi4wLjA." />
+    <link rel="stylesheet" href="https://firebasestorage.googleapis.com/v0/b/contact-database-9c47b.appspot.com/o/bundle.css?alt=media&token=43ba2bb1-d019-4667-a8df-d7cc78873427&_gl=1*hwhmjq*_ga*MjAyNDY5ODM1MC4xNjk4OTE3NTM0*_ga_CW55HF8NVT*MTY5OTI2MzA3My44LjEuMTY5OTI2NTA3Ny42MC4wLjA." />
+    <!-- APP CSS -->
+    <link href="assets/css/app.css" rel="stylesheet"/>
+
+    <!-- Hide raw HTML until Angular compiles it -->
+    <style>[ng-cloak] { display: none; }</style>
+
+  </head>
+
+  <body>
+
+    <!-- PAGE -->
+    <div class="container">
+
+        <!-- HEADER / MENU -->
+        <div class="shadow-sm shadow-green-50">
+            <div class="navbar-inner container-fluid">
+                <div ng-include="'app/views/nav-smg.html'"></div>
+            </div>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="main-wrapper">
+            <div ng-view></div>
+        </div>
+
+        <!-- FOOTER -->
+        <div ng-include="'app/views/footer.html'"></div>
+
+    </div>
+
+    <!-- VENDOR JS -->
+    <script src="assets/lib/angular.min.js"></script>
+    <script src="assets/lib/angular-route.min.js"></script>
+    <script src="assets/lib/angular-sanitize.min.js"></script>
+    <script src="assets/lib/angular-messages.min.js"></script>
+    <script src="assets/lib/jquery-2.2.0.min.js"></script>
+    <script src="assets/lib/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script>
+
+    <!-- APP JS -->
+    <script src="firebase.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/config/startup.js"></script>
+    <script src="app/config/routes.js"></script>
+    <script src="app/services/broadcast-service.js"></script>
+    <script src="app/services/profile-service.js"></script>
+    <script src="app/controllers/user-controller.js"></script>
+    <script src="app/controllers/nav-controller.js"></script>
+
+  </body>
+</html>
