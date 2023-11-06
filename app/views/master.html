@@ -1,0 +1,749 @@
+
+
+    
+ 
+
+---
+
+###### 1. 1+ i জটিল সংখ্যার পরমমান কত?
+ 
+
+```
+What is the modulus of complex number 1+i? 
+
+```
+
+
+
+
+
+- A: `-1`
+- B: `0`
+- C: `i` and `-i`
+- D: `√2`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: D
+
+√ {(1<sup>2</sup> + 1 <sup>2</sup>)}
+=√2
+</p>
+</details>
+
+---
+
+
+
+###### 2. 1- i এর আর্গুমেন্ট কত?
+
+
+```
+What is the argument of complex number 1+i? 
+
+```
+
+
+
+- A: -45°
+- B: -90°
+- C: 135°
+- D: 180°
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: A
+
+-45°
+
+</p>
+</details>
+
+---
+
+###### 3. "অপরিচিতা" গল্পের নায়ক কে? ?
+
+```
+<img src=""/>
+```
+
+- A: `হরিশ`
+- B: `কল্যান`
+- C: `অনুপম`
+- D: `কাহালু`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: C
+
+  `অপরিচিতা` গল্পের নায়ক অনুপম 
+
+</p>
+</details>
+
+
+###### 4. What's the output?
+
+```javascript
+function* generatorOne() {
+  yield ['a', 'b', 'c'];
+}
+
+function* generatorTwo() {
+  yield* ['a', 'b', 'c'];
+}
+
+const one = generatorOne();
+const two = generatorTwo();
+
+console.log(one.next().value);
+console.log(two.next().value);
+```
+
+- A: `a` and `a`
+- B: `a` and `undefined`
+- C: `['a', 'b', 'c']` and `a`
+- D: `a` and `['a', 'b', 'c']`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: C
+
+With the `yield` keyword, we `yield` values in a generator function. With the `yield*` keyword, we can yield values from another generator function, or iterable object (for example an array).
+
+In `generatorOne`, we yield the entire array `['a', 'b', 'c']` using the `yield` keyword. The value of `value` property on the object returned by the `next` method on `one` (`one.next().value`) is equal to the entire array `['a', 'b', 'c']`.
+
+```javascript
+console.log(one.next().value); // ['a', 'b', 'c']
+console.log(one.next().value); // undefined
+```
+
+In `generatorTwo`, we use the `yield*` keyword. This means that the first yielded value of `two`, is equal to the first yielded value in the iterator. The iterator is the array `['a', 'b', 'c']`. The first yielded value is `a`, so the first time we call `two.next().value`, `a` is returned.
+
+```javascript
+console.log(two.next().value); // 'a'
+console.log(two.next().value); // 'b'
+console.log(two.next().value); // 'c'
+console.log(two.next().value); // undefined
+```
+
+</p>
+</details>
+
+---
+
+###### 5. What's the output?
+
+```javascript
+console.log(`${(x => x)('I love')} to program`);
+```
+
+- A: `I love to program`
+- B: `undefined to program`
+- C: `${(x => x)('I love') to program`
+- D: `TypeError`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: A
+
+Expressions within template literals are evaluated first. This means that the string will contain the returned value of the expression, the immediately invoked function `(x => x)('I love')` in this case. We pass the value `'I love'` as an argument to the `x => x` arrow function. `x` is equal to `'I love'`, which gets returned. This results in `I love to program`.
+
+</p>
+</details>
+
+
+---
+
+###### 6. What's the output?
+
+```javascript
+let randomValue = { name: "Lydia" }
+randomValue = 23
+
+if (!typeof randomValue === "string") {
+	console.log("It's not a string!")
+} else {
+	console.log("Yay it's a string!")
+}
+```
+
+- A: `It's not a string!`
+- B: `Yay it's a string!`
+- C: `TypeError`
+- D: `undefined`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: B
+
+The condition within the `if` statement checks whether the value of `!typeof randomValue` is equal to `"string"`. The `!` operator converts the value to a boolean value. If the value is truthy, the returned value will be `false`, if the value is falsy, the returned value will be `true`. In this case, the returned value of `typeof randomValue` is the truthy value `"number"`, meaning that the value of `!typeof randomValue` is the boolean value `false`.
+
+`!typeof randomValue === "string"` always returns false, since we're actually checking `false === "string"`. Since the condition returned `false`, the code block of the `else` statement gets run, and `Yay it's a string!` gets logged.
+
+</p>
+</details>
+---
+
+###### 7. 1+ i জটিল সংখ্যার পরমমান কত?
+
+
+```
+What is the modulus of complex number 1+i? 
+
+```
+
+
+
+
+
+- A: `-1`
+- B: `0`
+- C: `i` and `-i`
+- D: `√2`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: D
+
+√ {(1<sup>2</sup> + 1 <sup>2</sup>)}
+=√2
+</p>
+</details>
+
+---
+
+
+
+###### 8. 1- i এর আর্গুমেন্ট কত?
+
+
+```
+What is the argument of complex number 1+i? 
+
+```
+
+
+
+- A: -45°
+- B: -90°
+- C: 135°
+- D: 180°
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: A
+
+-45°
+
+</p>
+</details>
+
+---
+
+###### 9. "অপরিচিতা" গল্পের নায়ক কে? ?
+
+```
+<img src=""/>
+```
+
+- A: `হরিশ`
+- B: `কল্যান`
+- C: `অনুপম`
+- D: `কাহালু`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: C
+
+  "অপরিচিতা" গল্পের নায়ক অনুপম 
+
+</p>
+</details>
+
+
+###### 10. What's the output?
+
+```javascript
+function* generatorOne() {
+  yield ['a', 'b', 'c'];
+}
+
+function* generatorTwo() {
+  yield* ['a', 'b', 'c'];
+}
+
+const one = generatorOne();
+const two = generatorTwo();
+
+console.log(one.next().value);
+console.log(two.next().value);
+```
+
+- A: `a` and `a`
+- B: `a` and `undefined`
+- C: `['a', 'b', 'c']` and `a`
+- D: `a` and `['a', 'b', 'c']`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: C
+
+With the `yield` keyword, we `yield` values in a generator function. With the `yield*` keyword, we can yield values from another generator function, or iterable object (for example an array).
+
+In `generatorOne`, we yield the entire array `['a', 'b', 'c']` using the `yield` keyword. The value of `value` property on the object returned by the `next` method on `one` (`one.next().value`) is equal to the entire array `['a', 'b', 'c']`.
+
+```javascript
+console.log(one.next().value); // ['a', 'b', 'c']
+console.log(one.next().value); // undefined
+```
+
+In `generatorTwo`, we use the `yield*` keyword. This means that the first yielded value of `two`, is equal to the first yielded value in the iterator. The iterator is the array `['a', 'b', 'c']`. The first yielded value is `a`, so the first time we call `two.next().value`, `a` is returned.
+
+```javascript
+console.log(two.next().value); // 'a'
+console.log(two.next().value); // 'b'
+console.log(two.next().value); // 'c'
+console.log(two.next().value); // undefined
+```
+
+</p>
+</details>
+
+---
+
+###### 11. What's the output?
+
+```javascript
+console.log(`${(x => x)('I love')} to program`);
+```
+
+- A: `I love to program`
+- B: `undefined to program`
+- C: `${(x => x)('I love') to program`
+- D: `TypeError`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: A
+
+Expressions within template literals are evaluated first. This means that the string will contain the returned value of the expression, the immediately invoked function `(x => x)('I love')` in this case. We pass the value `'I love'` as an argument to the `x => x` arrow function. `x` is equal to `'I love'`, which gets returned. This results in `I love to program`.
+
+</p>
+</details>
+
+
+---
+
+###### 12. What's the output?
+
+```javascript
+let randomValue = { name: "Lydia" }
+randomValue = 23
+
+if (!typeof randomValue === "string") {
+	console.log("It's not a string!")
+} else {
+	console.log("Yay it's a string!")
+}
+```
+
+- A: `It's not a string!`
+- B: `Yay it's a string!`
+- C: `TypeError`
+- D: `undefined`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: B
+
+The condition within the `if` statement checks whether the value of `!typeof randomValue` is equal to `"string"`. The `!` operator converts the value to a boolean value. If the value is truthy, the returned value will be `false`, if the value is falsy, the returned value will be `true`. In this case, the returned value of `typeof randomValue` is the truthy value `"number"`, meaning that the value of `!typeof randomValue` is the boolean value `false`.
+
+`!typeof randomValue === "string"` always returns false, since we're actually checking `false === "string"`. Since the condition returned `false`, the code block of the `else` statement gets run, and `Yay it's a string!` gets logged.
+
+</p>
+</details>
+---
+
+###### 13. 1+ i জটিল সংখ্যার পরমমান কত?
+
+
+```
+What is the modulus of complex number 1+i? 
+
+```
+
+
+
+
+
+- A: `-1`
+- B: `0`
+- C: `i` and `-i`
+- D: `√2`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: D
+
+√ {(1<sup>2</sup> + 1 <sup>2</sup>)}
+=√2
+</p>
+</details>
+
+---
+
+
+
+###### 14. 1- i এর আর্গুমেন্ট কত?
+
+
+```
+What is the argument of complex number 1+i? 
+
+```
+
+
+
+- A: -45°
+- B: -90°
+- C: 135°
+- D: 180°
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: A
+
+-45°
+
+</p>
+</details>
+
+---
+
+###### 15. "অপরিচিতা" গল্পের নায়ক কে? ?
+
+```
+<img src=""/>
+```
+
+- A: `হরিশ`
+- B: `কল্যান`
+- C: `অনুপম`
+- D: `কাহালু`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: C
+
+  "অপরিচিতা" গল্পের নায়ক অনুপম 
+
+</p>
+</details>
+
+
+###### 16. What's the output?
+
+```javascript
+function* generatorOne() {
+  yield ['a', 'b', 'c'];
+}
+
+function* generatorTwo() {
+  yield* ['a', 'b', 'c'];
+}
+
+const one = generatorOne();
+const two = generatorTwo();
+
+console.log(one.next().value);
+console.log(two.next().value);
+```
+
+- A: `a` and `a`
+- B: `a` and `undefined`
+- C: `['a', 'b', 'c']` and `a`
+- D: `a` and `['a', 'b', 'c']`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: C
+
+With the `yield` keyword, we `yield` values in a generator function. With the `yield*` keyword, we can yield values from another generator function, or iterable object (for example an array).
+
+In `generatorOne`, we yield the entire array `['a', 'b', 'c']` using the `yield` keyword. The value of `value` property on the object returned by the `next` method on `one` (`one.next().value`) is equal to the entire array `['a', 'b', 'c']`.
+
+```javascript
+console.log(one.next().value); // ['a', 'b', 'c']
+console.log(one.next().value); // undefined
+```
+
+In `generatorTwo`, we use the `yield*` keyword. This means that the first yielded value of `two`, is equal to the first yielded value in the iterator. The iterator is the array `['a', 'b', 'c']`. The first yielded value is `a`, so the first time we call `two.next().value`, `a` is returned.
+
+```javascript
+console.log(two.next().value); // 'a'
+console.log(two.next().value); // 'b'
+console.log(two.next().value); // 'c'
+console.log(two.next().value); // undefined
+```
+
+</p>
+</details>
+
+---
+
+###### 17. What's the output?
+
+```javascript
+console.log(`${(x => x)('I love')} to program`);
+```
+
+- A: `I love to program`
+- B: `undefined to program`
+- C: `${(x => x)('I love') to program`
+- D: `TypeError`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: A
+
+Expressions within template literals are evaluated first. This means that the string will contain the returned value of the expression, the immediately invoked function `(x => x)('I love')` in this case. We pass the value `'I love'` as an argument to the `x => x` arrow function. `x` is equal to `'I love'`, which gets returned. This results in `I love to program`.
+
+</p>
+</details>
+
+
+---
+
+###### 18. What's the output?
+
+```javascript
+let randomValue = { name: "Lydia" }
+randomValue = 23
+
+if (!typeof randomValue === "string") {
+	console.log("It's not a string!")
+} else {
+	console.log("Yay it's a string!")
+}
+```
+
+- A: `It's not a string!`
+- B: `Yay it's a string!`
+- C: `TypeError`
+- D: `undefined`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: B
+
+The condition within the `if` statement checks whether the value of `!typeof randomValue` is equal to `"string"`. The `!` operator converts the value to a boolean value. If the value is truthy, the returned value will be `false`, if the value is falsy, the returned value will be `true`. In this case, the returned value of `typeof randomValue` is the truthy value `"number"`, meaning that the value of `!typeof randomValue` is the boolean value `false`.
+
+`!typeof randomValue === "string"` always returns false, since we're actually checking `false === "string"`. Since the condition returned `false`, the code block of the `else` statement gets run, and `Yay it's a string!` gets logged.
+
+</p>
+</details>
+---
+
+###### 19. 1+ i জটিল সংখ্যার পরমমান কত?
+
+
+```
+What is the modulus of complex number 1+i? 
+
+```
+
+
+
+
+
+- A: `-1`
+- B: `0`
+- C: `i` and `-i`
+- D: `√2`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: D
+
+√ {(1<sup>2</sup> + 1 <sup>2</sup>)}
+=√2
+</p>
+</details>
+
+---
+
+
+
+###### 20. 1- i এর আর্গুমেন্ট কত?
+
+
+```
+What is the argument of complex number 1+i? 
+
+```
+
+
+
+- A: -45°
+- B: -90°
+- C: 135°
+- D: 180°
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: A
+
+-45°
+
+</p>
+</details>
+
+---
+
+###### 21. "অপরিচিতা" গল্পের নায়ক কে? ?
+
+```
+<img src=""/>
+```
+
+- A: `হরিশ`
+- B: `কল্যান`
+- C: `অনুপম`
+- D: `কাহালু`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: C
+
+  "অপরিচিতা" গল্পের নায়ক অনুপম 
+
+</p>
+</details>
+
+
+###### 22. What's the output?
+
+```javascript
+function* generatorOne() {
+  yield ['a', 'b', 'c'];
+}
+
+function* generatorTwo() {
+  yield* ['a', 'b', 'c'];
+}
+
+const one = generatorOne();
+const two = generatorTwo();
+
+console.log(one.next().value);
+console.log(two.next().value);
+```
+
+- A: `a` and `a`
+- B: `a` and `undefined`
+- C: `['a', 'b', 'c']` and `a`
+- D: `a` and `['a', 'b', 'c']`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: C
+
+With the `yield` keyword, we `yield` values in a generator function. With the `yield*` keyword, we can yield values from another generator function, or iterable object (for example an array).
+
+In `generatorOne`, we yield the entire array `['a', 'b', 'c']` using the `yield` keyword. The value of `value` property on the object returned by the `next` method on `one` (`one.next().value`) is equal to the entire array `['a', 'b', 'c']`.
+
+```javascript
+console.log(one.next().value); // ['a', 'b', 'c']
+console.log(one.next().value); // undefined
+```
+
+In `generatorTwo`, we use the `yield*` keyword. This means that the first yielded value of `two`, is equal to the first yielded value in the iterator. The iterator is the array `['a', 'b', 'c']`. The first yielded value is `a`, so the first time we call `two.next().value`, `a` is returned.
+
+```javascript
+console.log(two.next().value); // 'a'
+console.log(two.next().value); // 'b'
+console.log(two.next().value); // 'c'
+console.log(two.next().value); // undefined
+```
+
+</p>
+</details>
+
+---
+
+###### 23. What's the output?
+
+```javascript
+console.log(`${(x => x)('I love')} to program`);
+```
+
+- A: `I love to program`
+- B: `undefined to program`
+- C: `${(x => x)('I love') to program`
+- D: `TypeError`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: A
+
+Expressions within template literals are evaluated first. This means that the string will contain the returned value of the expression, the immediately invoked function `(x => x)('I love')` in this case. We pass the value `'I love'` as an argument to the `x => x` arrow function. `x` is equal to `'I love'`, which gets returned. This results in `I love to program`.
+
+</p>
+</details>
+
+
+---
+
+###### 24. What's the output?
+
+```javascript
+let randomValue = { name: "Lydia" }
+randomValue = 23
+
+if (!typeof randomValue === "string") {
+	console.log("It's not a string!")
+} else {
+	console.log("Yay it's a string!")
+}
+```
+
+- A: `It's not a string!`
+- B: `Yay it's a string!`
+- C: `TypeError`
+- D: `undefined`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: B
+
+The condition within the `if` statement checks whether the value of `!typeof randomValue` is equal to `"string"`. The `!` operator converts the value to a boolean value. If the value is truthy, the returned value will be `false`, if the value is falsy, the returned value will be `true`. In this case, the returned value of `typeof randomValue` is the truthy value `"number"`, meaning that the value of `!typeof randomValue` is the boolean value `false`.
+
+`!typeof randomValue === "string"` always returns false, since we're actually checking `false === "string"`. Since the condition returned `false`, the code block of the `else` statement gets run, and `Yay it's a string!` gets logged.
+
+</p>
+</details>
