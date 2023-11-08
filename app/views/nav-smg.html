@@ -35,6 +35,11 @@
             <a>Chat</a>
         </li>
         <li role="button"
+            ng-class="{active: navCtrl.isSelected(nav.PAGES.COURSES)}"
+            ng-click="navCtrl.selectPage(nav.PAGES.COURSES)">
+            <a>Courses</a>
+        </li>
+        <li role="button"
             ng-class="{active: navCtrl.isSelected(nav.PAGES.ACCOUNT)}"
             ng-click="navCtrl.selectPage(nav.PAGES.ACCOUNT)">
             <a>{{(account.authData != null)?"Account":"Sign In"}}</a>
