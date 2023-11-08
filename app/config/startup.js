@@ -15,6 +15,7 @@
             ACCOUNT:    '/account',
             EXAM:       '/exam',
             CHAT:       '/chat',
+            COURSES:       '/courses',
             
         })
         .constant('EVENTS', {
