@@ -14,6 +14,8 @@
             HOME:       '/home',
             ACCOUNT:    '/account',
             EXAM:       '/exam',
+            CHAT:       '/chat',
+            
         })
         .constant('EVENTS', {
             PROFILE_LOADED: 'profile-loaded',
