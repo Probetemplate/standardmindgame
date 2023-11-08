@@ -41,7 +41,9 @@
            .when(PAGES.CHAT,{
                 templateUrl: instance.build(PAGES.CHAT)
             })
-                
+              .when(PAGES.COURSES,{
+                templateUrl: instance.build(PAGES.COURSES)
+            })  
             .when('/',{
                 templateUrl: instance.build(PAGES.HOME)
             })
