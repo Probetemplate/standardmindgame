@@ -38,6 +38,10 @@
             .when(PAGES.EXAM,{
                 templateUrl: instance.build(PAGES.EXAM)
             })
+           .when(PAGES.CHAT,{
+                templateUrl: instance.build(PAGES.CHAT)
+            })
+                
             .when('/',{
                 templateUrl: instance.build(PAGES.HOME)
             })
