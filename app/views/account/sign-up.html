@@ -1,9 +1,3 @@
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="./script.js"></script>
-<!--
-* angular-firebase-user-profiles
 * (c) 2016 Cliff Hall @ Futurescale, Inc
 *
 * Account Page, Sign Up Form Template
@@ -11,7 +5,7 @@
 <div ng-show="userCtrl.showForm(account.selectedUserForm, account.USER_FORMS.SIGN_UP)">
 
     <!-- MEMBER SIGN UP -->
-    <form name="signup" class="form-signin" ng-submit="userCtrl.createUser()" id="captcha-submit">
+    <form name="signup" class="form-signin" ng-submit="userCtrl.createUser()">
 
         <!-- ERROR PANEL -->
         <div ng-include="'app/views/account/error-panel.html'"></div>
@@ -60,15 +54,7 @@
                    ng-required="true">
         
         
-<canvas id="captcha" width="200" height="80"></canvas>
-            <button type="button" class="btn btn-secondary" id="refresh-captcha">
-              <i class="fa fa-refresh"></i>
-            </button>
-        
 
-          <div class="mb-3">
-            <label for="captcha-input" class="form-label">Enter Captcha</label>
-            <input type="text" class="form-control" id="captcha-input" required>
           </div>
         <!-- CREATE ACCOUNT BUTTON -->
         <button class="btn btn-lg btn-primary btn-block"
@@ -78,6 +64,3 @@
     </form>
 
 </div>
-<style>canvas{max-width: 100%;
-             background:#f8f8f8;
-             color:blue;}</style>
