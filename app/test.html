@@ -1,81 +1,30 @@
+<link rel="stylesheet" href="style.css"/>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="./script.js"></script>
-<!--
-* angular-firebase-user-profiles
-* (c) 2016 Cliff Hall @ Futurescale, Inc
-*
-* Account Page, Sign Up Form Template
--->
-<div ng-show="userCtrl.showForm(account.selectedUserForm, account.USER_FORMS.SIGN_UP)">
-
-    <!-- MEMBER SIGN UP -->
-    <form name="signup" class="form-signin" ng-submit="userCtrl.createUser()" id="captcha-submit">
-
-        <!-- ERROR PANEL -->
-        <div ng-include="'app/views/account/error-panel.html'"></div>
-
-        <!-- INFO PANEL -->
-        <div ng-include="'app/views/account/info-panel.html'"></div>
-
-        <!-- SOCIAL SIGN-IN FORM -->
-        <div ng-include="'app/views/account/sign-in-social.html'"></div>
-
-        <!-- FORM -->
-        <div class="well">
-
-            <!-- EMAIL ADDRESS -->
-            <label for="emailInput" class="sr-only">Email address</label>
-            <input ng-model="account.emailInput"
-                   ng-change="userCtrl.clearMessage()"
-                   type="text"
-                   id="emailInput"
-                   name="emailInput"
-                   class="form-control form-signin-input"
-                   placeholder="Email Address"
-                   ng-required="true"
-                   autofocus>
-
-            <!-- PASSWORD -->
-            <label for="passwordInput" class="sr-only">Password</label>
-            <input ng-model="account.passwordInput"
-                   ng-change="userCtrl.clearMessage()"
-                   type="password"
-                   id="passwordInput"
-                   name="passwordInput"
-                   class="form-control form-signin-input"
-                   placeholder="Desired Password"
-                   ng-required="true">
-
-            <!-- CONFIRM PASSWORD -->
-            <label for="passwordConfirmInput" class="sr-only">Password</label>
-            <input ng-model="account.passwordConfirmInput"
-                   ng-change="userCtrl.clearMessage()"
-                   type="password"
-                   id="passwordConfirmInput"
-                   name="passwordConfirmInput"
-                   class="form-control form-signin-input"
-                   placeholder="Confirm Password"
-                   ng-required="true">
-        
-        
-<canvas id="captcha" width="200" height="80"></canvas>
-            <button type="button" class="btn btn-secondary" id="refresh-captcha">
-              <i class="fa fa-refresh"></i>
-            </button>
-        
-
-          <div class="mb-3">
-            <label for="captcha-input" class="form-label">Enter Captcha</label>
-            <input type="text" class="form-control" id="captcha-input" required>
-          </div>
-        <!-- CREATE ACCOUNT BUTTON -->
-        <button class="btn btn-lg btn-primary btn-block"
-                ng-disabled="account.passwordConfirmInput != account.passwordInput || account.passwordInput === ''"
-                type="submit">Create Account</button>
-
-    </form>
-
+<div class="card-container">
+	<span class="pro">PRO</span>
+	<img class="round" src="https://randomuser.me/api/portraits/women/79.jpg" alt="user" />
+	<h3>Ricky Park</h3>
+	<h6>New York</h6>
+	<p>User interface designer and <br/> front-end developer</p>
+	<div class="buttons">
+		<button class="primary">
+			Message
+		</button>
+		<button class="primary ghost">
+			Following
+		</button>
+	</div>
+	<div class="skills">
+		<h6>Skills</h6>
+		<ul>
+			<li>UI / UX</li>
+			<li>Front End Development</li>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>JavaScript</li>
+			<li>React</li>
+			<li>Node</li>
+		</ul>
+	</div>
 </div>
-<style>canvas{max-width: 100%;}</style>
+
