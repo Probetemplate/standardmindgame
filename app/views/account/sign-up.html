@@ -61,7 +61,16 @@
                    placeholder="Confirm Password"
                    ng-required="true">
         </div>
+<canvas id="captcha" width="200" height="80"></canvas>
+            <button type="button" class="btn btn-secondary" id="refresh-captcha">
+              <i class="fa fa-refresh"></i>
+            </button>
+          </div>
 
+          <div class="mb-3">
+            <label for="captcha-input" class="form-label">Enter Captcha</label>
+            <input type="text" class="form-control" id="captcha-input" required>
+          </div>
         <!-- CREATE ACCOUNT BUTTON -->
         <button class="btn btn-lg btn-primary btn-block"
                 ng-disabled="account.passwordConfirmInput != account.passwordInput || account.passwordInput === ''"
