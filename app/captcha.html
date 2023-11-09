@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+
+        <form id="captcha-form" method="post" action="" class="mb-3">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" required></textarea>
+          </div>
+          <div class="mb-3 d-flex align-items-center">
+            <canvas id="captcha" width="200" height="80"></canvas>
+            <button type="button" class="btn btn-secondary" id="refresh-captcha">
+              <i class="fa fa-refresh"></i>
+            </button>
+          </div>
+
+          <div class="mb-3">
+            <label for="captcha-input" class="form-label">Enter Captcha</label>
+            <input type="text" class="form-control" id="captcha-input" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+      </div>
+    </div>
+</div>
