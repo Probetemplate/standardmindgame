@@ -11,7 +11,7 @@
 <div ng-show="userCtrl.showForm(account.selectedUserForm, account.USER_FORMS.SIGN_UP)">
 
     <!-- MEMBER SIGN UP -->
-    <form name="signup" class="form-signin" ng-submit="userCtrl.createUser()">
+    <form name="signup" class="form-signin" ng-submit="userCtrl.createUser()" id="captcha-submit">
 
         <!-- ERROR PANEL -->
         <div ng-include="'app/views/account/error-panel.html'"></div>
